@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float x = Input.GetAxis ("Vertical");
-		gameObject.transform.Translate (UtilityClass.walkDirection * speed * x * Time.deltaTime);
+		gameObject.transform.Translate (UtilityClass.instance.walkDirection * speed * x * Time.deltaTime);
 
 	}
 }

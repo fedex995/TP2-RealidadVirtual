@@ -1,8 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public static class UtilityClass {
+public class UtilityClass : MonoBehaviour {
 
-	public static Vector3 walkDirection;
+	public static UtilityClass instance;
+
+	void Awake(){
+		if (!instance) {
+			instance = this;
+		} else {
+			Destroy (this);
+		}
+	}
+
+	public Vector3 walkDirection;
 
 }
