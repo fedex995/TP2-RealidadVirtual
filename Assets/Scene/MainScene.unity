@@ -130,6 +130,26 @@ Prefab:
       propertyPath: m_Name
       value: FourBlocks (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 120058, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145470, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 172864, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 183818, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
   m_IsPrefabParent: 0
@@ -384,7 +404,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 753138099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlockStretch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,6 +476,26 @@ Prefab:
       propertyPath: m_Name
       value: FourBlocks (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 120058, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145470, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 172864, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 183818, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
   m_IsPrefabParent: 0
@@ -501,6 +541,26 @@ Prefab:
     - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
       propertyPath: m_Name
       value: FourBlocks (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 120058, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145470, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 172864, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 183818, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
@@ -553,7 +613,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1049548119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,6 +675,26 @@ Prefab:
     - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
       propertyPath: m_Name
       value: FourBlocks (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 120058, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145470, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 172864, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 183818, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
@@ -744,6 +824,26 @@ Prefab:
       propertyPath: m_Name
       value: FourBlocks (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 120058, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145470, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 172864, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 183818, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
   m_IsPrefabParent: 0
@@ -786,6 +886,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 120058, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 145470, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 172864, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 187498, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 183818, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
   m_IsPrefabParent: 0
@@ -801,9 +921,10 @@ GameObject:
   - 136: {fileID: 1438619714}
   - 54: {fileID: 1438619712}
   - 114: {fileID: 1438619713}
-  m_Layer: 0
+  - 114: {fileID: 1438619717}
+  m_Layer: 9
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -834,7 +955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56967f7a616b64df9ad0bd2f562c191e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!136 &1438619714
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -869,6 +989,18 @@ Transform:
   - {fileID: 715155524}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1438619717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438619711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3082840b4644e4291910c7a3c3e9aaf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 0
 --- !u!4 &1588024294 stripped
 Transform:
   m_PrefabParentObject: {fileID: 444790, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
