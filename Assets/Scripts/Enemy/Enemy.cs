@@ -3,6 +3,12 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
+	public Vector3 walkDirection;
+	public float speed;
+	void Update(){
+		this.gameObject.transform.Translate (UtilityClass.instance.walkDirection * speed * Time.deltaTime);
+	}
+
 	void OnTriggerEnter(Collider c){
 		if (c.gameObject.tag.Equals ("Player")) {
 			Destroy (gameObject);
