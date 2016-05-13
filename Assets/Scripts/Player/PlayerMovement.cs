@@ -5,6 +5,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	private Rigidbody rigidbody;
 	private bool grounded;
+	public Canvas canvas;
+
 	// Use this for initialization
 	void Start () {
 		rigidbody = gameObject.GetComponent<Rigidbody> ();
@@ -19,11 +21,13 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (leftTurn) {
 			//UtilityClass.instance.turnLeft ();
-			gameObject.transform.Rotate (0, -90, 0);
+			canvas.GetComponent<FadeScreen>().startFadeIn(false);
+
 		}
 		if (rightTurn) {
+			canvas.GetComponent<FadeScreen>().startFadeIn(true);
 			//UtilityClass.instance.turnRight ();
-			gameObject.transform.Rotate (0, 90, 0);
+
 		}
 
 	}
