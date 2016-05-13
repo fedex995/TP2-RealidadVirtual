@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
 	public Vector3 walkDirection;
 	public float speed;
 	void Update(){
-		this.gameObject.transform.Translate (UtilityClass.instance.walkDirection * speed * Time.deltaTime);
+		this.gameObject.transform.Translate (walkDirection * speed * Time.deltaTime);
 	}
 
 	void OnTriggerEnter(Collider c){
@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour {
 			Debug.Log ("You were attacked by a " + enemyType + "!");
 			c.gameObject.SendMessage ("Attacked");
 		}
-
+	}
+	public void GoBack(){
+		walkDirection = walkDirection * -1f;
 	}
 }
