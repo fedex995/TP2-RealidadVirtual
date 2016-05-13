@@ -117,7 +117,7 @@ Material:
         first:
           name: _DownTex
         second:
-          m_Texture: {fileID: 2800000, guid: b5083419fb69cb64db14c7dbe879f362, type: 3}
+          m_Texture: {fileID: 2800000, guid: 49372bfccecf8f642b68af0682b2afb2, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
