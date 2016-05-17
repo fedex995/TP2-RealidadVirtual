@@ -5,6 +5,8 @@ public class UtilityClass : MonoBehaviour {
 
 	public static UtilityClass instance;
 	public Player player;
+    public GameObject fireball;
+    //public GameObject Fireball { get; }
 
 	void Awake(){
 		if (!instance) {

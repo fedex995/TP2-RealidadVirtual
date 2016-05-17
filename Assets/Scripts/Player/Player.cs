@@ -7,7 +7,16 @@ public class Player : MonoBehaviour {
 	public int lives;
 	private bool turn;
 	private Vector3 turnPosition;
-	// Use this for initialization
+    public float normalSpeed;
+    public float normalJumpForce;
+    public float flowerSpeed;
+    public float flowerJumpForce;
+    public float mushroomSpeed;
+    public float mushroomJumpForce;
+    public float starSpeed;
+    public float starJumpForce;
+
+
 	void Start () {
 		currentState = new NormalState (this);
 		turn = false;
@@ -15,25 +24,28 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		currentState.move ();
+		currentState.Move ();
 
 		bool jump = Input.GetButtonDown ("Jump");
 		if (jump) {
-			currentState.jump ();
+			currentState.Jump ();
 		}
+
+        bool fire = Input.GetButtonDown("Fire");
+	    if (fire) currentState.Fire();
 	}
 
 	public void CollectedMushroom(){
-		currentState = new MushroomState (this);
+		currentState = new MushroomState (this, mushroomSpeed, mushroomJumpForce);
 	}
 	public void CollectedStar(){
-		currentState = new StarState (this);
+		currentState = new StarState (this, starSpeed, starJumpForce);
 	}
 	public void CollectedFlower(){
-		currentState = new FlowerState (this);
+		currentState = new FlowerState (this, flowerSpeed, flowerJumpForce);
 	}
 	public void Attacked(){
-		currentState.attacked ();
+		currentState.Attacked ();
 	}
 	public void YouCanTurn(Vector3 position){
 		turn = true;
