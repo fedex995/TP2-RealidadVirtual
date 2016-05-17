@@ -20,4 +20,12 @@ public class WindmillPlatform : MonoBehaviour
             c.transform.parent = transform;
         }
     }
+
+    void OnCollisionExit(Collision c)
+    {
+        if (c.gameObject.tag == "Player")
+        {
+            c.transform.parent = null;
+        }
+    }
 }

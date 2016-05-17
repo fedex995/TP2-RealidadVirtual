@@ -32,21 +32,22 @@ public class PlayerMovement : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter(Collision c){
+	void OnCollisionEnter(Collision c)
+	{
 		if(c.gameObject.layer == LayerMask.NameToLayer("Floor")){
 			grounded = true;
 		}
 	}
 
-	void OnCollisionExit(Collision c){
-		if(c.gameObject.layer == LayerMask.NameToLayer("Floor")){
+	void OnCollisionExit(Collision c)
+    {
+        if (c.gameObject.layer == LayerMask.NameToLayer("Floor")){
 			grounded = false;
 		}
 	}
 
 	public void jump(float jumpForce){
 		if (grounded) {
-			Debug.Log ("jump!!");
 			rigidbody.AddForceAtPosition (Vector3.up * jumpForce, Vector3.zero);
 		}
 	}

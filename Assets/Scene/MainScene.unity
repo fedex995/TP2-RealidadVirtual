@@ -4971,22 +4971,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 452908, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 452908, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.00000016292068
-      objectReference: {fileID: 0}
-    - target: {fileID: 433000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071066
-      objectReference: {fileID: 0}
-    - target: {fileID: 433000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.70710695
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d6c0a6cef5b483d992d189d69fbd92, type: 2}
   m_IsPrefabParent: 0
@@ -8737,6 +8721,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 283044956}
+  - 65: {fileID: 283044957}
   m_Layer: 8
   m_Name: Easy-1
   m_TagString: Untagged
@@ -8764,6 +8749,18 @@ Transform:
   - {fileID: 472075037}
   m_Father: {fileID: 1049548119}
   m_RootOrder: 0
+--- !u!65 &283044957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283044955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 511}
+  m_Center: {x: 0, y: 0, z: 255.5}
 --- !u!1 &283542061
 GameObject:
   m_ObjectHideFlags: 0
@@ -11233,6 +11230,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 362064108}
+  - 65: {fileID: 362064109}
   m_Layer: 8
   m_Name: Easy-3
   m_TagString: Untagged
@@ -11258,6 +11256,18 @@ Transform:
   - {fileID: 283542062}
   m_Father: {fileID: 1049548119}
   m_RootOrder: 2
+--- !u!65 &362064109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362064107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 384}
+  m_Center: {x: 0, y: 0, z: 191.5}
 --- !u!1001 &364096961
 Prefab:
   m_ObjectHideFlags: 0
@@ -42540,6 +42550,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1527814443}
+  - 65: {fileID: 1527814444}
   m_Layer: 8
   m_Name: Medium-1
   m_TagString: Untagged
@@ -42567,6 +42578,18 @@ Transform:
   - {fileID: 464869974}
   m_Father: {fileID: 1049548119}
   m_RootOrder: 4
+--- !u!65 &1527814444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1527814442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 508}
+  m_Center: {x: 0, y: 0, z: 254}
 --- !u!1 &1528118822
 GameObject:
   m_ObjectHideFlags: 0
@@ -43479,6 +43502,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1572204544}
+  - 65: {fileID: 1572204545}
   m_Layer: 8
   m_Name: Easy-2
   m_TagString: Untagged
@@ -43506,6 +43530,18 @@ Transform:
   - {fileID: 1106180986}
   m_Father: {fileID: 1049548119}
   m_RootOrder: 1
+--- !u!65 &1572204545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572204543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 512}
+  m_Center: {x: 0, y: 0, z: 255.5}
 --- !u!1001 &1572694460
 Prefab:
   m_ObjectHideFlags: 0
