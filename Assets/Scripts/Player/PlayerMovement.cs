@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 	private Rigidbody rigidbody;
 	private bool grounded;
 	public Canvas canvas;
+	bool fading = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,12 +20,14 @@ public class PlayerMovement : MonoBehaviour {
 		bool leftTurn = Input.GetButtonDown ("LeftBumper");
 		bool rightTurn = Input.GetButtonDown ("RightBumper");
 
-		if (leftTurn) {
+		if (leftTurn && !fading) {
 			//UtilityClass.instance.turnLeft ();
+			fading = true;
 			canvas.GetComponent<FadeScreen>().startFadeIn(false);
 
 		}
-		if (rightTurn) {
+		if (rightTurn && !fading) {
+			fading = true;
 			canvas.GetComponent<FadeScreen>().startFadeIn(true);
 			//UtilityClass.instance.turnRight ();
 
@@ -54,6 +57,9 @@ public class PlayerMovement : MonoBehaviour {
 	public void move(float speed){
 		float x = Input.GetAxis ("Vertical");
 		gameObject.transform.Translate (UtilityClass.instance.walkDirection * speed * x * Time.deltaTime);
+	}
+	public void setFading(bool fading){
+		this.fading = fading;
 	}
 }
 

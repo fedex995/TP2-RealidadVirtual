@@ -10,9 +10,6 @@ public class FadeScreen : MonoBehaviour {
 	public float interval;
 	public float alphaInterval;
 
-	public FadeScreen(){
-	}
-
 	public void startFadeIn(bool direction){
 		StartCoroutine(fadeIn(direction));
 	}
@@ -43,6 +40,8 @@ public class FadeScreen : MonoBehaviour {
 			temp.a = temp.a - alphaInterval;
 			myPanel.color = temp;
 			startFadeOut ();
+		} else {
+			UtilityClass.instance.setPlayerFading ();
 		}
 	}
 }

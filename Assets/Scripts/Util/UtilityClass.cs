@@ -22,6 +22,9 @@ public class UtilityClass : MonoBehaviour {
 		} else {
 			player.gameObject.transform.Rotate (0, -90, 0);
 		}
+	}
 
+	public void setPlayerFading(){
+		player.GetComponent<PlayerMovement> ().setFading (false);
 	}
 }
