@@ -6,7 +6,7 @@ public class NormalState : PlayerState {
 	public NormalState(Player player) : base(player.GetComponent<PlayerMovement>()){
 		this.player = player;
 		speed = 10;
-		jumpForce = 500;
+		jumpForce = 250;
 	}
 
 	public override void jump(){
