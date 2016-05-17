@@ -5,6 +5,17 @@ public class Player : MonoBehaviour {
 
 	public PlayerState currentState;
 	public int lives;
+
+    public float normalSpeed;
+    public float normalJumpForce;
+    public float flowerSpeed;
+    public float flowerJumpForce;
+    public float mushroomSpeed;
+    public float mushroomJumpForce;
+    public float starSpeed;
+    public float starJumpForce;
+
+
 	// Use this for initialization
 	void Start () {
 		currentState = new NormalState (this);
@@ -12,24 +23,27 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		currentState.move ();
+		currentState.Move ();
 
 		bool jump = Input.GetButtonDown ("Jump");
 		if (jump) {
-			currentState.jump ();
+			currentState.Jump ();
 		}
+
+        bool fire = Input.GetButtonDown("Fire");
+	    if (fire) currentState.Fire();
 	}
 
 	public void CollectedMushroom(){
-		currentState = new MushroomState (this);
+		currentState = new MushroomState (this, mushroomSpeed, mushroomJumpForce);
 	}
 	public void CollectedStar(){
-		currentState = new StarState (this);
+		currentState = new StarState (this, starSpeed, starJumpForce);
 	}
 	public void CollectedFlower(){
-		currentState = new FlowerState (this);
+		currentState = new FlowerState (this, flowerSpeed, flowerJumpForce);
 	}
 	public void Attacked(){
-		currentState.attacked ();
+		currentState.Attacked ();
 	}
 }

@@ -9,14 +9,16 @@ public class NormalState : PlayerState {
 		jumpForce = 400;
 	}
 
-	public override void jump(){
+	public override void Jump(){
 		movement.jump (jumpForce);
 	}
-	public override void move(){
+	public override void Move(){
 		movement.move (speed);
 	}
-	public override void attacked(){
+	public override void Attacked(){
 
-	}
-	
+    }
+
+    public override void Fire() { }
+
 }

@@ -1,41 +1,15 @@
 fileFormatVersion: 2
-guid: b499b2182e085824e866637bc3989410
-timeCreated: 1463516830
+guid: 88a240d81f5cfcc4b88ee3a2bebe7cda
+timeCreated: 1463516787
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cylinder01
-    100004: PhotometricLight01
-    100006: Plane01
-    100008: TPhotometricLight01
-    100010: TPhotometricLight01.Target
-    100012: TPhotometricLight02
-    100014: TPhotometricLight02.Target
-    100016: TPhotometricLight03
-    100018: TPhotometricLight03.Target
-    100020: TPhotometricLight04
-    100022: TPhotometricLight04.Target
     400000: //RootNode
-    400002: Cylinder01
-    400004: PhotometricLight01
-    400006: Plane01
-    400008: TPhotometricLight01
-    400010: TPhotometricLight01.Target
-    400012: TPhotometricLight02
-    400014: TPhotometricLight02.Target
-    400016: TPhotometricLight03
-    400018: TPhotometricLight03.Target
-    400020: TPhotometricLight04
-    400022: TPhotometricLight04.Target
-    2300000: Cylinder01
-    2300002: Plane01
-    3300000: Cylinder01
-    3300002: Plane01
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Cylinder01
-    4300002: Plane01
-    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1

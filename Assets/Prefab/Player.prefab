@@ -64,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.66, z: 0}
+  m_LocalPosition: {x: 0.13, y: 1.24, z: -12.43}
   m_LocalScale: {x: 1.5, y: 1.6, z: 1.5}
   m_Children:
   - {fileID: 487822}
@@ -233,6 +233,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 0
+  normalSpeed: 12
+  normalJumpForce: 400
+  flowerSpeed: 12
+  flowerJumpForce: 400
+  mushroomSpeed: 12
+  mushroomJumpForce: 500
+  starSpeed: 25
+  starJumpForce: 400
 --- !u!124 &12470284
 Behaviour:
   m_ObjectHideFlags: 1
