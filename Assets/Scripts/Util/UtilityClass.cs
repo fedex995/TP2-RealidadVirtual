@@ -19,9 +19,13 @@ public class UtilityClass : MonoBehaviour {
 	public void turn(bool direction){
 		if (direction) {
 			player.gameObject.transform.Rotate (0, 90, 0);
+
 		} else {
 			player.gameObject.transform.Rotate (0, -90, 0);
 		}
+		Vector3 newPosition = player.getTurnPosition ();
+		newPosition.y = player.transform.position.y;
+		player.transform.position = newPosition;
 	}
 
 	public void setPlayerFading(){

@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	private Rigidbody rigidbody;
+	private Player player;
 	private bool grounded;
 	public Canvas canvas;
 	bool fading = false;
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
 		rigidbody = gameObject.GetComponent<Rigidbody> ();
 		grounded = true;
+		player = gameObject.GetComponent<Player> ();
 	}
 
 	// Update is called once per frame
@@ -20,17 +22,14 @@ public class PlayerMovement : MonoBehaviour {
 		bool leftTurn = Input.GetButtonDown ("LeftBumper");
 		bool rightTurn = Input.GetButtonDown ("RightBumper");
 
-		if (leftTurn && !fading) {
-			//UtilityClass.instance.turnLeft ();
+		if (leftTurn && !fading && player.canTurn()) {
 			fading = true;
 			canvas.GetComponent<FadeScreen>().startFadeIn(false);
 
 		}
-		if (rightTurn && !fading) {
+		if (rightTurn && !fading && player.canTurn()) {
 			fading = true;
 			canvas.GetComponent<FadeScreen>().startFadeIn(true);
-			//UtilityClass.instance.turnRight ();
-
 		}
 
 	}
