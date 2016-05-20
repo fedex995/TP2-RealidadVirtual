@@ -69,4 +69,10 @@ public class Player : MonoBehaviour {
 			GameManager.instance.EndGame ();
 		}
 	}
+
+    public void Kill()
+    {
+        lives = 0;
+        GameManager.instance.EndGame();
+    }
 }
