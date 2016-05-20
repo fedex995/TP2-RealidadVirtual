@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class FadeScreen : MonoBehaviour {
 
 	public Image myPanel;
+	public Text text;
 	Color colorToFadeTo;
 	Color colorToFadeOut;
 	public float interval;
@@ -42,6 +43,23 @@ public class FadeScreen : MonoBehaviour {
 			startFadeOut ();
 		} else {
 			UtilityClass.instance.setPlayerFading ();
+		}
+	}
+	public void StartFadeBlack(){
+		StartCoroutine(FadeBlack());
+	}
+	IEnumerator FadeBlack(){
+		yield return new WaitForSeconds (interval);
+		Color temp = myPanel.color;
+		Debug.Log (temp.a);
+		if (temp.a < 1) {
+			temp.a = temp.a + alphaInterval;
+			myPanel.color = temp;
+			StartFadeBlack ();
+		} else {
+			Color tempText = text.color;
+			tempText.a = 1;
+			text.color = tempText;
 		}
 	}
 }
