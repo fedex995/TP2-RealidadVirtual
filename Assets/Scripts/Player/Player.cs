@@ -60,4 +60,10 @@ public class Player : MonoBehaviour {
 	public Vector3 getTurnPosition (){
 		return turnPosition;
 	}
+	public void ReduceLives(){
+		lives--;
+		if (lives == 0) {
+			GameManager.instance.EndGame ();
+		}
+	}
 }
