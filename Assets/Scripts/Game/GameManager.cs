@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 	public Player player;
 	public Text coins;
 	public Image[] lives;
+    public float timeSeconds = 0f;
 
 	void Awake(){
 		if (!instance) {
@@ -18,9 +19,20 @@ public class GameManager : MonoBehaviour {
 			Destroy (this);
 		}
 	}
+
+    void Update()
+    {
+        timeSeconds += Time.deltaTime;
+    }
+
 	public void EndGame(){
 		canvas.GetComponent<FadeScreen>().StartFadeBlack();
 		Debug.Log ("ended game");
+	}
+
+	public void WonGame(){
+		canvas.GetComponent<FadeScreen>().StartFadeBlack();
+		Debug.Log ("Won game");
 	}
 	public void ChangePlayerSize(Vector3 vector){
 		camera.transform.position += vector;
