@@ -21,6 +21,6 @@ public class FlowerState : PlayerState {
 
     public override void Fire()
     {
-        
+        //UtilityClass.instance
     }
 }
