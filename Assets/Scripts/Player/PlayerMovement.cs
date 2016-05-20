@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		if(c.gameObject.layer == LayerMask.NameToLayer("Floor")){
 			grounded = true;
-		}
+        }
 	}
 
 	void OnCollisionExit(Collision c)
