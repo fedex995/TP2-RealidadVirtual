@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.36, z: 4.9}
+  m_LocalPosition: {x: 0, y: 1.24, z: -12.43}
   m_LocalScale: {x: 1.5, y: 1.6, z: 1.5}
   m_Children:
   - {fileID: 487822}
@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22493842}
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56967f7a616b64df9ad0bd2f562c191e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 22391098}
+  canvas: {fileID: 0}
 --- !u!114 &11446752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,12 +323,12 @@ MonoBehaviour:
   lives: 0
   normalSpeed: 12
   normalJumpForce: 400
-  flowerSpeed: 0
-  flowerJumpForce: 0
-  mushroomSpeed: 0
-  mushroomJumpForce: 0
-  starSpeed: 0
-  starJumpForce: 0
+  flowerSpeed: 15
+  flowerJumpForce: 400
+  mushroomSpeed: 14
+  mushroomJumpForce: 500
+  starSpeed: 25
+  starJumpForce: 450
 --- !u!114 &11496854
 MonoBehaviour:
   m_ObjectHideFlags: 1

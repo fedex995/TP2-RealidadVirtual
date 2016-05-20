@@ -32,7 +32,11 @@ public class Player : MonoBehaviour {
 		}
 
         bool fire = Input.GetButtonDown("Fire");
-	    if (fire) currentState.Fire();
+	    if (fire)
+	    {
+            Debug.Log("FIRE");
+	        currentState.Fire();
+	    }
 	}
 
 	public void CollectedMushroom(){

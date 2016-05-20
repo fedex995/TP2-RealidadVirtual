@@ -7,5 +7,6 @@ public class PowerUp : MonoBehaviour {
 		string powerType = gameObject.tag;
 		Debug.Log ("You got a " + powerType + "!");
 		c.gameObject.SendMessage ("Collected" + powerType);
+        Destroy(this.gameObject);
 	}
 }	
