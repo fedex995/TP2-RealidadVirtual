@@ -16,10 +16,16 @@ public class Player : MonoBehaviour {
     public float starSpeed;
     public float starJumpForce;
 	private int coins;
+    private Vector3 initialPosition;
+    private Quaternion initialRotation;
 
 
-	void Start () {
-		currentState = new NormalState (this, normalSpeed, normalJumpForce);
+
+	void Start ()
+	{
+	    initialPosition = transform.position;
+	    initialRotation = transform.rotation;
+	    currentState = new NormalState (this, normalSpeed, normalJumpForce);
 		turn = false;
 		coins = 0;
 	}
@@ -67,16 +73,16 @@ public class Player : MonoBehaviour {
 	}
 	public void ReduceLives(){
 		lives--;
-		if (lives == 0) {
-			GameManager.instance.EndGame ();
-		}
+	    if (lives == 0)
+	    {
+	        GameManager.instance.EndGame();
+	    }
+	    else
+	    {
+	        transform.position = initialPosition;
+	        transform.rotation = initialRotation;
+	    }
 	}
-
-    public void Kill()
-    {
-        lives = 0;
-        GameManager.instance.EndGame();
-    }
 	public void CollectedCoin(){
 		coins++;
 	}

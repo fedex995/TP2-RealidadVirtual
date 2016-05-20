@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class KillOnCollision : MonoBehaviour {
+public class BrickBlock : MonoBehaviour {
 
     void OnCollisionEnter(Collision c)
     {
         if (c.gameObject.tag == "Player")
         {
-            c.gameObject.SendMessage("ReduceLives");
+            Destroy(this.gameObject);
         }
     }
 }
