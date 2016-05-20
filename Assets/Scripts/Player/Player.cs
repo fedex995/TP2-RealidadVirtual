@@ -15,11 +15,13 @@ public class Player : MonoBehaviour {
     public float mushroomJumpForce;
     public float starSpeed;
     public float starJumpForce;
+	private int coins;
 
 
 	void Start () {
 		currentState = new NormalState (this, normalSpeed, normalJumpForce);
 		turn = false;
+		coins = 0;
 	}
 	
 	// Update is called once per frame
@@ -69,5 +71,8 @@ public class Player : MonoBehaviour {
 		if (lives == 0) {
 			GameManager.instance.EndGame ();
 		}
+	}
+	public void CollectedCoin(){
+		coins++;
 	}
 }
