@@ -86,4 +86,5 @@ public class Player : MonoBehaviour {
 	public void CollectedCoin(){
 		coins++;
 	}
+    public int Coins { get { return this.coins; } }
 }

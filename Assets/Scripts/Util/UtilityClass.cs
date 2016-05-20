@@ -6,6 +6,7 @@ public class UtilityClass : MonoBehaviour {
 	public static UtilityClass instance;
 	public Player player;
     [SerializeField] private GameObject fireball;
+    [SerializeField] private GameObject coin;
 
     public GameObject Fireball { get { return this.fireball; } }
 
