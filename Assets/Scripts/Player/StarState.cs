@@ -16,8 +16,8 @@ public class StarState : PlayerState {
 	public override void Move(){
 		movement.move (speed);
 	}
-	public override void Attacked(){
-
+	public override void Attacked(GameObject enemy){
+		enemy.SendMessage ("Kill");
     }
 
     public override void Fire() {}

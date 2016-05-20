@@ -10,7 +10,7 @@ public abstract class PlayerState {
 
 	public abstract void Jump ();
 	public abstract void Move ();
-	public abstract void Attacked ();
+	public abstract void Attacked (GameObject enemy);
 	public abstract void Fire ();
 	public PlayerState(PlayerMovement movement) {
 		this.movement = movement;

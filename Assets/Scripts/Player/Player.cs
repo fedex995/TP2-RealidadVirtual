@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 
 
 	void Start () {
-		currentState = new NormalState (this, normalSpeed, normalJumpForce);
+		currentState = new StarState (this, normalSpeed, normalJumpForce);
 		turn = false;
 	}
 	
@@ -48,8 +48,8 @@ public class Player : MonoBehaviour {
 	public void CollectedFlower(){
 		currentState = new FlowerState (this, flowerSpeed, flowerJumpForce);
 	}
-	public void Attacked(){
-		currentState.Attacked ();
+	public void Attacked(GameObject enemy){
+		currentState.Attacked (enemy);
 	}
 	public void YouCanTurn(Vector3 position){
 		turn = true;
@@ -63,5 +63,11 @@ public class Player : MonoBehaviour {
 	}
 	public Vector3 getTurnPosition (){
 		return turnPosition;
+	}
+	public void ReduceLives(){
+		lives--;
+		if (lives == 0) {
+			GameManager.instance.EndGame ();
+		}
 	}
 }
