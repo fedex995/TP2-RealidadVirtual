@@ -8,7 +8,7 @@ public class MushroomState : PlayerState {
         this.player = player;
         this.speed = speed;
         this.jumpForce = jumpForce;
-		player.transform.localScale += new Vector3(0, 1F, 0);
+		GameManager.instance.ChangePlayerSize (new Vector3(0, 1, 0));
     }
 
     public override void Jump(){
@@ -18,7 +18,7 @@ public class MushroomState : PlayerState {
 		movement.move (speed);
 	}
 	public override void Attacked(GameObject enemy){
-		player.transform.localScale -= new Vector3(0, 1F, 0);
+		GameManager.instance.ChangePlayerSize (new Vector3(0, -1, 0));
 		player.currentState = new NormalState (player, player.normalSpeed, player.normalJumpForce);
     }
 

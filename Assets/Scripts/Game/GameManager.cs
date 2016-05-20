@@ -4,6 +4,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance;
+	public Camera camera;
 	public Canvas canvas;
 	public Player player;
 
@@ -18,5 +19,7 @@ public class GameManager : MonoBehaviour {
 		canvas.GetComponent<FadeScreen>().StartFadeBlack();
 		Debug.Log ("ended game");
 	}
-
+	public void ChangePlayerSize(Vector3 vector){
+		camera.transform.position += vector;
+	}
 }
