@@ -24,4 +24,9 @@ public class Enemy : MonoBehaviour {
 	public void GoBack(){
 		walkDirection = walkDirection * -1f;
 	}
+
+    void Kill()
+    {
+        Destroy(gameObject);
+    }
 }

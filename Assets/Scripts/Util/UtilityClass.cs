@@ -5,8 +5,9 @@ public class UtilityClass : MonoBehaviour {
 
 	public static UtilityClass instance;
 	public Player player;
-    public GameObject fireball;
-    //public GameObject Fireball { get; }
+    [SerializeField] private GameObject fireball;
+
+    public GameObject Fireball { get { return this.fireball; } }
 
 	void Awake(){
 		if (!instance) {

@@ -21,6 +21,7 @@ public class FlowerState : PlayerState {
 
     public override void Fire()
     {
-        //UtilityClass.instance
+        var fireball = UtilityClass.instance.Fireball;
+        GameObject createdFireball = GameObject.Instantiate(fireball, player.transform.position, fireball.transform.rotation) as GameObject;
     }
 }
