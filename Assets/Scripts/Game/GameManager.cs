@@ -4,6 +4,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	public static GameManager instance;
+	public Canvas canvas;
 	public Player player;
 
 	void Awake(){
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 	public void EndGame(){
+		canvas.GetComponent<FadeScreen>().StartFadeBlack();
 		Debug.Log ("ended game");
 	}
 

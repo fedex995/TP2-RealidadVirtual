@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 
 
 	void Start () {
-		currentState = new StarState (this, normalSpeed, normalJumpForce);
+		currentState = new NormalState (this, normalSpeed, normalJumpForce);
 		turn = false;
 	}
 	
