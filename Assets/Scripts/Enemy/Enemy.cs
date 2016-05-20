@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour {
 		if(c.gameObject.tag.Equals("Player")){
 			string enemyType = gameObject.tag;
 			Debug.Log ("You were attacked by a " + enemyType + "!");
-			c.gameObject.SendMessage ("Attacked");
+			c.gameObject.SendMessage ("Attacked", this.gameObject);
 		}
 	}
 	public void GoBack(){

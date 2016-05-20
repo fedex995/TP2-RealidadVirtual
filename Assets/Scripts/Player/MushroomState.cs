@@ -16,7 +16,7 @@ public class MushroomState : PlayerState {
 	public override void Move(){
 		movement.move (speed);
 	}
-	public override void Attacked(){
+	public override void Attacked(GameObject enemy){
 		player.currentState = new NormalState (player, player.normalSpeed, player.normalJumpForce);
     }
 

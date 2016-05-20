@@ -15,7 +15,7 @@ public class NormalState : PlayerState {
 	public override void Move(){
 		movement.move (speed);
 	}
-	public override void Attacked(){
+	public override void Attacked(GameObject enemy){
 		player.ReduceLives ();
     }
 
