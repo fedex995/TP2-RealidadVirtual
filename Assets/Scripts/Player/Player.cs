@@ -88,4 +88,5 @@ public class Player : MonoBehaviour {
 		coins++;
 		GameManager.instance.CoinCount (coins);
 	}
+    public int Coins { get { return this.coins; } }
 }

@@ -7,6 +7,8 @@ public class BrickBlock : MonoBehaviour {
     {
         if (c.gameObject.tag == "Player")
         {
+            if (Random.Range(0f, 1f) > 0.6f)
+                c.gameObject.SendMessage("CollectedCoin");
             Destroy(this.gameObject);
         }
     }
