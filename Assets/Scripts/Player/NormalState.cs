@@ -3,10 +3,10 @@ using System.Collections;
 
 public class NormalState : PlayerState {
 
-	public NormalState(Player player) : base(player.GetComponent<PlayerMovement>()){
+	public NormalState(Player player, float speed, float jumpForce) : base(player.GetComponent<PlayerMovement>()){
 		this.player = player;
-		speed = 10;
-		jumpForce = 400;
+		this.speed = speed;
+		this.jumpForce = jumpForce;
 	}
 
 	public override void Jump(){
