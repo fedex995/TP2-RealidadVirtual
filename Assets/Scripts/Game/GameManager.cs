@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -7,6 +8,8 @@ public class GameManager : MonoBehaviour {
 	public Camera camera;
 	public Canvas canvas;
 	public Player player;
+	public Text coins;
+	public Image[] lives;
 
 	void Awake(){
 		if (!instance) {
@@ -21,5 +24,12 @@ public class GameManager : MonoBehaviour {
 	}
 	public void ChangePlayerSize(Vector3 vector){
 		camera.transform.position += vector;
+	}
+	public void CoinCount(int count){
+		coins.text = "x " + count;
+	}
+	public void RemoveLive(int liveCount){
+		Color temp = new Color (0, 0, 0, 0);
+		lives [liveCount].color = temp;
 	}
 }

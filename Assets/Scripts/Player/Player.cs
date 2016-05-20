@@ -67,6 +67,7 @@ public class Player : MonoBehaviour {
 	}
 	public void ReduceLives(){
 		lives--;
+		GameManager.instance.RemoveLive (lives);
 		if (lives == 0) {
 			GameManager.instance.EndGame ();
 		}
@@ -79,5 +80,6 @@ public class Player : MonoBehaviour {
     }
 	public void CollectedCoin(){
 		coins++;
+		GameManager.instance.CoinCount (coins);
 	}
 }
