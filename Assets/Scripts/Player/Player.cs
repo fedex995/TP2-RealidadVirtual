@@ -87,6 +87,7 @@ public class Player : MonoBehaviour {
 	    {
 	        transform.position = initialPosition;
 	        transform.rotation = initialRotation;
+            CollectedMushroom();
 	    }
 	}
 	public void CollectedCoin(){
