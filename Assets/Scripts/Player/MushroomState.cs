@@ -9,6 +9,7 @@ public class MushroomState : PlayerState {
         this.speed = speed;
         this.jumpForce = jumpForce;
 		GameManager.instance.ChangePlayerSize (new Vector3(0, 1, 0));
+		ChangePowerupCanvas ("Mushroom");
     }
 
     public override void Jump(){

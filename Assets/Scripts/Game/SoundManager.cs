@@ -4,7 +4,7 @@ using System.Collections;
 public class SoundManager : MonoBehaviour {
 
 	public static SoundManager instance;
-	public enum Sounds{Mushroom, Coin, FireBall, Jump, End, GameOver, Dies, Brick, Goomba}
+	public enum Sounds{Mushroom, Coin, FireBall, Jump, End, GameOver, Dies, Brick, Goomba, Star}
 
 	public AudioClip mushroom;
 	public AudioClip coin;
@@ -16,6 +16,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip greeting;
 	public AudioClip brick;
 	public AudioClip goomba;
+	public AudioClip star;
+	public AudioClip theme;
 
 	private AudioSource audioSource;
 	public AudioSource themeSource;
@@ -87,7 +89,13 @@ public class SoundManager : MonoBehaviour {
 		}
 		audioSource.Play();
 	}
-	private void ResumeThemeSound(){
+	public void ResumeThemeSound(){
+		themeSource.clip = theme;
+		themeSource.Play ();
+	}
+	public void StarSound(){
+		themeSource.Pause ();
+		themeSource.clip = star;
 		themeSource.Play ();
 	}
 }

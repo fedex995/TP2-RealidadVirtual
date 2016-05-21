@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour {
 	public Text coins;
 	public Image[] lives;
     public float timeSeconds = 0f;
+	public Image flower;
+	public Image mushroom;
+	public Image star;
 
 	void Awake(){
 		if (!instance) {
@@ -43,5 +46,34 @@ public class GameManager : MonoBehaviour {
 	public void RemoveLive(int liveCount){
 		Color temp = new Color (0, 0, 0, 0);
 		lives [liveCount].color = temp;
+	}
+	public void ChangeCanvasPowerUp(string state){
+		Color hidden = new Color (0, 0, 0, 0);
+		Color show = new Color (1, 1, 1, 1);
+		switch (state) {
+		case "Mushroom":
+			mushroom.color = show;
+			flower.color = hidden;
+			star.color = hidden;
+			break;
+		
+		case "Flower":
+			mushroom.color = hidden;
+			flower.color = show;
+			star.color = hidden;
+			break;
+
+		case "Star":
+			mushroom.color = hidden;
+			flower.color = hidden;
+			star.color = show;
+			break;
+		default:
+			mushroom.color = hidden;
+			flower.color = hidden;
+			star.color = hidden;
+			break;
+	
+		}
 	}
 }
