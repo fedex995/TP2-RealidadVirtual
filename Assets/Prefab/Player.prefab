@@ -554,7 +554,7 @@ MonoBehaviour:
   dies: {fileID: 8300000, guid: 01fe02e371c1348c5b96a66e5e0d4853, type: 3}
   greeting: {fileID: 8300000, guid: 9058dc46c403248e0bc6b2057ebff941, type: 3}
   brick: {fileID: 8300000, guid: 0b566d92a96974f86bd317ca52cd1c89, type: 3}
-  goomba: {fileID: 0}
+  goomba: {fileID: 8300000, guid: 96c370bdbe68149328057c2850d2c559, type: 3}
   themeSource: {fileID: 8207996}
 --- !u!114 &11407232
 MonoBehaviour:
