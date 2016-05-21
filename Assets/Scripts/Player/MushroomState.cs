@@ -23,4 +23,8 @@ public class MushroomState : PlayerState {
     }
 
     public override void Fire() { }
+    public override void SizeToNormal()
+    {
+        GameManager.instance.ChangePlayerSize(new Vector3(0, -1, 0));
+    }
 }

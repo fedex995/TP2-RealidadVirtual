@@ -16,4 +16,5 @@ public abstract class PlayerState {
 		this.movement = movement;
 	}
 
+    public abstract void SizeToNormal();
 }

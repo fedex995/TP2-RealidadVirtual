@@ -27,12 +27,12 @@ public class GameManager : MonoBehaviour {
 
 	public void EndGame(){
 		canvas.GetComponent<FadeScreen>().StartFadeBlack();
-		Debug.Log ("ended game");
 	}
 
-	public void WonGame(){
-		canvas.GetComponent<FadeScreen>().StartFadeBlack();
-		Debug.Log ("Won game");
+	public void WonGame()
+	{
+	    int score = Mathf.RoundToInt(player.Coins * (10000/timeSeconds) * player.lives);
+		canvas.GetComponent<FadeScreen>().Won(score);
 	}
 	public void ChangePlayerSize(Vector3 vector){
 		camera.transform.position += vector;

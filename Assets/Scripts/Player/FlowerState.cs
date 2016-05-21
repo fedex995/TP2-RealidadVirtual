@@ -26,4 +26,9 @@ public class FlowerState : PlayerState {
         createdFireball.GetComponent<Rigidbody>().AddForce(player.transform.forward * 700f);
 		SoundManager.instance.PlaySound (SoundManager.Sounds.FireBall);
     }
+
+    public override void SizeToNormal()
+    {
+        
+    }
 }

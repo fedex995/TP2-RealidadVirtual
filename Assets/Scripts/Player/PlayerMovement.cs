@@ -60,5 +60,6 @@ public class PlayerMovement : MonoBehaviour {
 	public void setFading(bool fading){
 		this.fading = fading;
 	}
+    public bool Grounded { set { this.grounded = value; } }
 }
 

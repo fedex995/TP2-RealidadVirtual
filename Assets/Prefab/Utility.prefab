@@ -118,7 +118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   fireball: {fileID: 117316, guid: 4dfa81cd893ba76409b1588e89e7a047, type: 2}
-  coin: {fileID: 123924, guid: 665fa90ad43be42988a21c06db84096c, type: 2}
   walkDirection: {x: 0, y: 0, z: 1}
 --- !u!114 &11445928
 MonoBehaviour:
@@ -150,6 +149,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  timeSeconds: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

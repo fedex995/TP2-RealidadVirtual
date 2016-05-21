@@ -20,5 +20,8 @@ public class NormalState : PlayerState {
     }
 
     public override void Fire() { }
-
+    public override void SizeToNormal()
+    {
+        
+    }
 }

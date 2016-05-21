@@ -21,4 +21,8 @@ public class StarState : PlayerState {
     }
 
     public override void Fire() {}
+    public override void SizeToNormal()
+    {
+        
+    }
 }

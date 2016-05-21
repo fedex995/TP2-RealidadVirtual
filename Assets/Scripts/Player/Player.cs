@@ -46,14 +46,19 @@ public class Player : MonoBehaviour {
 	    }
 	}
 
-	public void CollectedMushroom(){
-		currentState = new MushroomState (this, mushroomSpeed, mushroomJumpForce);
+	public void CollectedMushroom()
+    {
+        currentState.SizeToNormal();
+        currentState = new MushroomState (this, mushroomSpeed, mushroomJumpForce);
 	}
-	public void CollectedStar(){
-		currentState = new StarState (this, starSpeed, starJumpForce);
+	public void CollectedStar()
+    {
+        currentState.SizeToNormal();
+        currentState = new StarState (this, starSpeed, starJumpForce);
 	}
 	public void CollectedFlower(){
-		currentState = new FlowerState (this, flowerSpeed, flowerJumpForce);
+        currentState.SizeToNormal();
+        currentState = new FlowerState (this, flowerSpeed, flowerJumpForce);
 	}
 	public void Attacked(GameObject enemy){
 		currentState.Attacked (enemy);
