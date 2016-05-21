@@ -212,6 +212,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &179644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 457226}
+  - 82: {fileID: 8293932}
+  - 114: {fileID: 11401534}
+  - 82: {fileID: 8207996}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &190748
 GameObject:
   m_ObjectHideFlags: 1
@@ -258,6 +276,7 @@ Transform:
   m_Children:
   - {fileID: 452290}
   - {fileID: 459940}
+  - {fileID: 457226}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &452290
@@ -273,6 +292,18 @@ Transform:
   - {fileID: 22418578}
   m_Father: {fileID: 444646}
   m_RootOrder: 0
+--- !u!4 &457226
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.64, y: 1.3478844, z: -0.017}
+  m_LocalScale: {x: 0.6666667, y: 0.625, z: 0.6666667}
+  m_Children: []
+  m_Father: {fileID: 444646}
+  m_RootOrder: 2
 --- !u!4 &459940
 Transform:
   m_ObjectHideFlags: 1
@@ -348,6 +379,154 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169400}
   m_Enabled: 1
+--- !u!82 &8207996
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179644}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1f6d0b857b82740fd9b58d2823e2223f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &8293932
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179644}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!92 &9280798
 Behaviour:
   m_ObjectHideFlags: 1
@@ -355,6 +534,28 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169400}
   m_Enabled: 1
+--- !u!114 &11401534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6bf55154486d4126804a28166ba7b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mushroom: {fileID: 8300000, guid: a609f0cc243614dfab588d88282d37d3, type: 3}
+  coin: {fileID: 8300000, guid: b1e99d4b67b81440d909068795ca12a4, type: 3}
+  fireball: {fileID: 8300000, guid: b055369bea9c1447592e52d33e02cbef, type: 3}
+  jump: {fileID: 8300000, guid: eca8a4883995843a9ac61914bbd056bf, type: 3}
+  gameOver: {fileID: 8300000, guid: 8cda5865c189646cb9bd511d5ea21450, type: 3}
+  end: {fileID: 8300000, guid: c83e92773219b428a881469867e03729, type: 3}
+  dies: {fileID: 8300000, guid: 01fe02e371c1348c5b96a66e5e0d4853, type: 3}
+  greeting: {fileID: 8300000, guid: 9058dc46c403248e0bc6b2057ebff941, type: 3}
+  brick: {fileID: 8300000, guid: 0b566d92a96974f86bd317ca52cd1c89, type: 3}
+  goomba: {fileID: 0}
+  themeSource: {fileID: 8207996}
 --- !u!114 &11407232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1078,7 +1279,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -4.2}
+  m_AnchoredPosition: {x: -90, y: -23}
   m_SizeDelta: {x: 1174, y: 265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
