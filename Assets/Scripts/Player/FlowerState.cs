@@ -25,4 +25,9 @@ public class FlowerState : PlayerState {
         GameObject createdFireball = GameObject.Instantiate(fireball, player.transform.position + player.transform.forward * 2f + player.transform.up * 1.5f, fireball.transform.rotation) as GameObject;
         createdFireball.GetComponent<Rigidbody>().AddForce(player.transform.forward * 700f);
     }
+
+    public override void SizeToNormal()
+    {
+        
+    }
 }

@@ -29,6 +29,7 @@ public class UtilityClass : MonoBehaviour {
 		Vector3 newPosition = player.getTurnPosition ();
 		newPosition.y = player.transform.position.y;
 		player.transform.position = newPosition;
+	    player.GetComponent<PlayerMovement>().Grounded = true;
 	}
 
 	public void setPlayerFading(){

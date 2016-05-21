@@ -6,6 +6,8 @@ public class FadeScreen : MonoBehaviour {
 
 	public Image myPanel;
 	public Text text;
+	public Text wonText;
+	public Text scoreText;
 	Color colorToFadeTo;
 	Color colorToFadeOut;
 	public float interval;
@@ -18,7 +20,6 @@ public class FadeScreen : MonoBehaviour {
 	IEnumerator fadeIn (bool direction) {
 		yield return new WaitForSeconds (interval);
 		Color temp = myPanel.color;
-		Debug.Log (temp.a);
 		if (temp.a < 1) {
 			temp.a = temp.a + alphaInterval;
 			myPanel.color = temp;
@@ -32,11 +33,8 @@ public class FadeScreen : MonoBehaviour {
 		StartCoroutine(fadeOut());
 	}
 	IEnumerator fadeOut () {
-		Debug.Log("fadeOut");
-
-		yield return new WaitForSeconds (interval);
+        yield return new WaitForSeconds (interval);
 		Color temp = myPanel.color;
-		Debug.Log (temp.a);
 		if (temp.a > 0) {
 			temp.a = temp.a - alphaInterval;
 			myPanel.color = temp;
@@ -51,7 +49,6 @@ public class FadeScreen : MonoBehaviour {
 	IEnumerator FadeBlack(){
 		yield return new WaitForSeconds (interval);
 		Color temp = myPanel.color;
-		Debug.Log (temp.a);
 		if (temp.a < 1) {
 			temp.a = temp.a + alphaInterval;
 			myPanel.color = temp;
@@ -60,6 +57,26 @@ public class FadeScreen : MonoBehaviour {
 			Color tempText = text.color;
 			tempText.a = 1;
 			text.color = tempText;
+		}
+	}
+	public void Won(int score){
+		StartCoroutine(FadeWon(score));
+	}
+	IEnumerator FadeWon(int score){
+		yield return new WaitForSeconds (interval);
+		Color temp = myPanel.color;
+		if (temp.a < 1) {
+			temp.a = temp.a + alphaInterval;
+			myPanel.color = temp;
+			Won (score);
+		} else {
+			Color tempText = wonText.color;
+			tempText.a = 1;
+            wonText.color = tempText;
+			Color tempText2 = scoreText.color;
+		    scoreText.text = "Score: " + score;
+			tempText2.a = 1;
+            scoreText.color = tempText2;
 		}
 	}
 }
