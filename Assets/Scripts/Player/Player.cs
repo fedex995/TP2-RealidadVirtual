@@ -55,6 +55,7 @@ public class Player : MonoBehaviour {
     {
         currentState.SizeToNormal();
         currentState = new StarState (this, starSpeed, starJumpForce);
+		Invoke ("BackToNormal", 10);
 	}
 	public void CollectedFlower(){
         currentState.SizeToNormal();
@@ -97,4 +98,9 @@ public class Player : MonoBehaviour {
 		GameManager.instance.CoinCount (coins);
 	}
     public int Coins { get { return this.coins; } }
+
+	private void BackToNormal(){
+		SoundManager.instance.ResumeThemeSound ();
+		currentState = new NormalState (this, normalSpeed, normalJumpForce);
+	}
 }

@@ -8,6 +8,8 @@ public class StarState : PlayerState {
         this.player = player;
         this.speed = speed;
         this.jumpForce = jumpForce;
+		ChangePowerupCanvas ("Star");
+		SoundManager.instance.StarSound ();
     }
 
     public override void Jump(){
@@ -25,4 +27,5 @@ public class StarState : PlayerState {
     {
         
     }
+
 }

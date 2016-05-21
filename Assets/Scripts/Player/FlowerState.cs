@@ -7,6 +7,7 @@ public class FlowerState : PlayerState {
 		this.player = player;
 		this.speed = speed;
         this.jumpForce = jumpForce;
+		ChangePowerupCanvas ("Flower");
 	}
 
 	public override void Jump(){

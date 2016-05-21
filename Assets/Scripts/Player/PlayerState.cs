@@ -17,4 +17,8 @@ public abstract class PlayerState {
 	}
 
     public abstract void SizeToNormal();
+
+	public void ChangePowerupCanvas(string state){
+		GameManager.instance.ChangeCanvasPowerUp (state);
+	}
 }
