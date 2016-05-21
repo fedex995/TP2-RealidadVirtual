@@ -24,6 +24,7 @@ public class FlowerState : PlayerState
 	    if (alreadyAttacked)
 	    {
 	        player.ReduceLives();
+			GameManager.instance.ChangeCanvasPowerUp ("Normal");
 	    } else alreadyAttacked = true;
 	}
 

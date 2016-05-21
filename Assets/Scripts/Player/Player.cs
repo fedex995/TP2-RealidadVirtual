@@ -102,5 +102,6 @@ public class Player : MonoBehaviour {
 	private void BackToNormal(){
 		SoundManager.instance.ResumeThemeSound ();
 		currentState = new NormalState (this, normalSpeed, normalJumpForce);
+		GameManager.instance.ChangeCanvasPowerUp ("Normal");
 	}
 }
