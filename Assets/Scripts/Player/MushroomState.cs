@@ -21,6 +21,7 @@ public class MushroomState : PlayerState {
 	public override void Attacked(GameObject enemy){
 		GameManager.instance.ChangePlayerSize (new Vector3(0, -1, 0));
 		player.currentState = new NormalState (player, player.normalSpeed, player.normalJumpForce);
+		GameManager.instance.ChangeCanvasPowerUp ("Normal");
     }
 
     public override void Fire() { }
