@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour {
 	public void jump(float jumpForce){
 		if (grounded) {
 			rigidbody.AddForceAtPosition (Vector3.up * jumpForce, Vector3.zero);
+			SoundManager.instance.PlaySound (SoundManager.Sounds.Jump);
 		}
 	}
 	public void move(float speed){

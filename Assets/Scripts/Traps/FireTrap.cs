@@ -8,7 +8,7 @@ public class FireTrap : MonoBehaviour
     [SerializeField] private float activeSeconds;
     [SerializeField] private ParticleSystem[] fireSources;
     [SerializeField] private GameObject[] fireTriggers;
-
+	public AudioSource source;
     private bool active = true;
 
 	// Use this for initialization
@@ -27,6 +27,11 @@ public class FireTrap : MonoBehaviour
         foreach (var fireTrigger in fireTriggers)
             fireTrigger.SetActive(active);
         active = !active;
+		if (active) {
+			source.Pause ();
+		} else {
+			source.Play ();
+		}
         Invoke("ToggleFire", activeSeconds);
     }
 }

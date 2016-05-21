@@ -9,6 +9,8 @@ public class EndGameTrigger : MonoBehaviour {
         if (c.gameObject.tag == "Player")
         {
             GameManager.instance.WonGame();
+			SoundManager.instance.PlaySound (SoundManager.Sounds.End);
+
         }
     }
 
