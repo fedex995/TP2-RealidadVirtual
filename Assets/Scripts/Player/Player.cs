@@ -82,9 +82,11 @@ public class Player : MonoBehaviour {
 	    if (lives == 0)
 	    {
 	        GameManager.instance.EndGame();
+			SoundManager.instance.PlaySound (SoundManager.Sounds.GameOver);
 	    }
 	    else
 	    {
+			SoundManager.instance.PlaySound (SoundManager.Sounds.Dies);
 	        transform.position = initialPosition;
 	        transform.rotation = initialRotation;
             CollectedMushroom();

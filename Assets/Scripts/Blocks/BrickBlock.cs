@@ -9,6 +9,7 @@ public class BrickBlock : MonoBehaviour {
         {
             if (Random.Range(0f, 1f) > 0.6f)
                 c.gameObject.SendMessage("CollectedCoin");
+			SoundManager.instance.PlaySound (SoundManager.Sounds.Brick);
             Destroy(this.gameObject);
         }
     }

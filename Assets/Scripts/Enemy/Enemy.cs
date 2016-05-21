@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c){
 		if (c.gameObject.tag.Equals ("Player")) {
+			SoundManager.instance.PlaySound (SoundManager.Sounds.Goomba);
 			Destroy (gameObject);
 		}	
 	}
